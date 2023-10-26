@@ -1,5 +1,5 @@
 const APP_PREFIX = 'Deciderino_' // Identifier for this app (this needs to be consistent across every cache update)
-const VERSION = 'V_02';              // Version of the off-line cache (change this value everytime you want to update cache)
+const VERSION = 'V_03';              // Version of the off-line cache (change this value everytime you want to update cache)
 const CACHE_NAME = APP_PREFIX + VERSION;
 
 const ASSETS = [

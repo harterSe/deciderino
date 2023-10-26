@@ -154,7 +154,9 @@
   <title>Deciderino!</title>
 
   <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.10/css/pico.min.css">
-  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+  <!--<link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core">
+
   <style>
     :root {
       --primary: #43a047;
@@ -197,17 +199,17 @@
 </head>
 <body class="max-height">
 <main class="container layout">
-  <div class="text-logo">
-    <img alt="logo" src="assets/deciderino.png" width="100" height="100">
-    <h1 class="text-logo">Deciderino!</h1>
+  <div class="text-logo  xyz-in" xyz="fade small stagger ease-out-back">
+    <img alt="logo" class="xyz-nested" src="assets/deciderino.png" width="100" height="100">
+    <h1 class="text-logo xyz-nested">Deciderino!</h1>
   </div>
 
-  <span class="result big">?</span>
+  <span class="result big xyz-in" xyz="fade big delay-5">?</span>
 
-  <article>
-    <button class="outline contrast" onclick="decide()">Ja / Nein</button>
-    <button class="outline contrast" onclick="oneToTen()">1 - 10</button>
-    <button class="outline contrast" onclick="oracle()">Orakel</button>
+  <article class="xyz-in" xyz="fade flip-down stagger duration-5 delay-1 ease-out-back">
+    <button class="outline contrast xyz-nested" onclick="decide()">Ja / Nein</button>
+    <button class="outline contrast xyz-nested" onclick="oneToTen()">1 - 10</button>
+    <button class="outline contrast xyz-nested" onclick="oracle()">Orakel</button>
   </article>
 </main>
 <script>
